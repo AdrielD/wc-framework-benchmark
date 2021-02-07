@@ -1,19 +1,14 @@
 <template>
-  <vanilla-ds-button @click="changeText">
-    {{ text }}
-  </vanilla-ds-button>
+  <div>
+    Vanilla DS: <VanillaDSButton />
+  </div>
 </template>
 
 <script>
-import 'vanilla-ds/build/vanilla-ds'
+import VanillaDSButton from './VanillaDS/Button.vue';
 
 export default {
   name: 'App',
-  data() {
-    return { text: 'Ahoy!' };
-  },
-  methods: {
-    changeText() { this.text = 'You clicked me!'; }
-  }
+  components: { VanillaDSButton },
 }
 </script>
