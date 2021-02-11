@@ -2,7 +2,7 @@ const template = document.createElement('template');
 
 template.innerHTML = `
 <style>
-  .button {
+  button {
     border: 2px solid #8609b8;
     border-radius: 15px;
     background-color: #af0af0;
@@ -12,15 +12,15 @@ template.innerHTML = `
     padding: 5px 10px;
     cursor: pointer;
   }
-  .button:hover {
+  button:hover {
     border: 2px solid #af0af0;
     background-color: #8609b8;
   }
-  .button:active {
+  button:active {
     border: 2px solid #af0af0;
     background-color: #5f0782;
   }
-  .button:focus {
+  button:focus {
     border: 2px solid #af0af0;
     outline: none;
   }
@@ -39,25 +39,25 @@ class Button extends HTMLElement {
     this.$button = this._shadowRoot.querySelector('button');
   }
 
-  get onClick() {
-    return this.getAttribute('onClick');
-  }
+  // get onClick() {
+  //   return this.getAttribute('onClick');
+  // }
 
-  set onClick(value) {
-    this.setAttribute('onClick', value);
-  }
+  // set onClick(value) {
+  //   this.setAttribute('onClick', value);
+  // }
 
-  static get observedAttributes() {
-    return ['onClick'];
-  }
+  // static get observedAttributes() {
+  //   return ['onClick'];
+  // }
 
-  attributeChangedCallback() {
-    this.render();
-  }
+  // attributeChangedCallback() {
+  //   this.render();
+  // }
 
   render() {
-    this.$button.onclick = this.onClick;
+    // this.$button.onclick = this.onClick;
   }
 }
 
-export default Button;
+window.customElements.define('vanilla-ds-button', Button);
