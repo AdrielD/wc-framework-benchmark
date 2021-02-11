@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import 'vanilla-ds/build/vanilla-ds';
 
 const VanillaDSButton = () => {
   const [label, setLabel] = useState('Ahoy!');

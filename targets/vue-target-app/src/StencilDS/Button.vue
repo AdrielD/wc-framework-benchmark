@@ -1,12 +1,12 @@
 <template>
-  <vanilla-ds-button @click="changeText">
+  <stencil-ds-button @click="changeText">
     {{ text }}
-  </vanilla-ds-button>
+  </stencil-ds-button>
 </template>
 
 <script>
 export default {
-  name: 'VanillaDSButton',
+  name: 'StencilDSButton',
   data() {
     return { text: 'Ahoy!' };
   },

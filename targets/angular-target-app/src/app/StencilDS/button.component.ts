@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'vanilla-button',
+  selector: 'stencil-button',
   templateUrl: './button.component.html',
 })
 
-export class VanillaDSButton {
+export class StencilDSButton {
   text = 'Ahoy!';
 
   onClick() {
