@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "vue-cli-service serve --port 3457",
     "serve": "vue-cli-service serve --port 3457",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"

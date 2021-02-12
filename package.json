@@ -1,0 +1,21 @@
+{
+  "name": "wc-framework-benchmark",
+  "version": "1.0.0",
+  "description": "In `libs` you will find web component libraries developed in different ways. In `targets` you will find apps from the main frameworks used today.",
+  "main": "index.js",
+  "scripts": {
+    "config": "./config.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrielD/wc-framework-benchmark.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrielD/wc-framework-benchmark/issues"
+  },
+  "homepage": "https://github.com/AdrielD/wc-framework-benchmark#readme"
+}
