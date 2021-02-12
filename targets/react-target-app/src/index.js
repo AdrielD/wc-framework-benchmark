@@ -23,30 +23,25 @@ import './style.css';
 defineCustomElements();
 
 const App = () => (
-  <div>
-    <p>MultiType showcases:</p>
-    <div className="multitype-wrapper">
-      <div className="multitype-block">
-        <p>Vanilla DS:</p>
-        <DefaultVanillaDSMultiType />
-        <br /><br />
-        <VanillaDSMultiType />
-      </div>
-      <div className="multitype-block">
-        <p>Lit Element DS:</p>
-        <DefaultLitElementDSMultiType />
-        <br /><br />
-        <LitElementDSMultiType />
-      </div>
+  <div className="wrapper">
+    <p className="w100">MultiType showcases:</p>
+    <div className="multitype-block">
+      <p>Vanilla DS:</p>
+      <DefaultVanillaDSMultiType />
+      <br /><br />
+      <VanillaDSMultiType />
     </div>
-    <p>Button showcases:</p>
-    Vanilla DS: <VanillaDSButton />
-    <br /><br />
-    LitElement DS: <LitElementDSButton />
-    <br /><br />
-    Stencil DS: <StencilDSButton />
-    <br /><br />
-    Svelte DS: <SvelteDSButton />
+    <div className="multitype-block">
+      <p>Lit Element DS:</p>
+      <DefaultLitElementDSMultiType />
+      <br /><br />
+      <LitElementDSMultiType />
+    </div>
+    <p className="w100">Button showcases:</p>
+    <div className="w100">Vanilla DS: <VanillaDSButton /></div>
+    <div className="w100">LitElement DS: <LitElementDSButton /></div>
+    <div className="w100">Stencil DS: <StencilDSButton /></div>
+    <div className="w100">Svelte DS: <SvelteDSButton /></div>
   </div>
 );
 
