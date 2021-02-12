@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "http-server ./ -a localhost",
     "build": "./node_modules/.bin/rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^7.18.0",
+    "http-server": "^0.12.3",
     "rollup": "^2.38.1"
   },
   "dependencies": {}

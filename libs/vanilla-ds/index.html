@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script type="module" src="./src/Buttons/Button/index.js"></script>
+    <script type="module" src="./src/MultiType/index.js"></script>
+  </head>
+  <body>
+    <vanilla-ds-multitype
+      title="Multitype component (default button)"
+      itemlist="['red', 'blue', 'green', 'yellow']"
+      buttonprops='{"collapsedText": "expandir", "expandedText": "recolher"}'
+    >
+    </vanilla-ds-multitype>
+    <br /><br />
+    <vanilla-ds-multitype title="Multitype component" itemlist="['pizza','potato','banana']">
+      <vanilla-ds-button slot="button"></vanilla-ds-button>
+    </vanilla-ds-multitype>
+  </body>
+</html>
