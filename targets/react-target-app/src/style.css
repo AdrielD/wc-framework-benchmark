@@ -1,0 +1,12 @@
+.multitype-wrapper {
+  height: 200px;
+  display: flex;
+  margin-bottom: 250px;
+}
+
+.multitype-block {
+  margin-right: 15px;
+  padding: 15px;
+  border: 1px solid #000;
+  height: 400px;
+}

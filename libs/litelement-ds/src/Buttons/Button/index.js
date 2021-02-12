@@ -38,5 +38,3 @@ class Button extends LitElement {
 }
 
 customElements.define('litelement-ds-button', Button);
-
-export default Button;

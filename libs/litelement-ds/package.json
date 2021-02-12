@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "es-dev-server --node-resolve --watch --port 8080",
     "build": "./node_modules/.bin/rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +15,7 @@
     "lit-element": "^2.4.0"
   },
   "devDependencies": {
+    "es-dev-server": "^2.1.0",
     "rollup": "^2.38.5"
   }
 }

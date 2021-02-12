@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script type="module" src="./src/Buttons/Button/index.js"></script>
+    <script type="module" src="./src/MultiType/index.js"></script>
+  </head>
+  <body>
+    <litelement-ds-multitype
+      title="Multitype component (default button)"
+      itemlist='["red", "blue", "green", "yellow"]'
+      buttonprops='{"collapsedText": "expandir", "expandedText": "recolher"}'
+    >
+    </litelement-ds-multitype>
+    <br /><br />
+    <litelement-ds-multitype title="Multitype component" itemlist='["pizza", "potato", "banana"]'>
+      <litelement-ds-button slot="button"></litelement-ds-button>
+    </litelement-ds-multitype>
+  </body>
+</html>

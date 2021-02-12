@@ -14,29 +14,39 @@ import {
   MultiType as VanillaDSMultiType,
   DefaultMultiType as DefaultVanillaDSMultiType
 } from './VanillaDS/MultiType.jsx';
+import {
+  MultiType as LitElementDSMultiType,
+  DefaultMultiType as DefaultLitElementDSMultiType
+} from './LitElementDS/MultiType.jsx';
+import './style.css';
 
 defineCustomElements();
 
 const App = () => (
   <div>
-    <div>
-      <p>MultiType showcases:</p>
-      <p>Vanilla DS:</p>
-      <DefaultVanillaDSMultiType />
-      <br /><br />
-      <VanillaDSMultiType />
+    <p>MultiType showcases:</p>
+    <div className="multitype-wrapper">
+      <div className="multitype-block">
+        <p>Vanilla DS:</p>
+        <DefaultVanillaDSMultiType />
+        <br /><br />
+        <VanillaDSMultiType />
+      </div>
+      <div className="multitype-block">
+        <p>Lit Element DS:</p>
+        <DefaultLitElementDSMultiType />
+        <br /><br />
+        <LitElementDSMultiType />
+      </div>
     </div>
+    <p>Button showcases:</p>
+    Vanilla DS: <VanillaDSButton />
     <br /><br />
-    <div>
-      <p>Button showcases:</p>
-      Vanilla DS: <VanillaDSButton />
-      <br /><br />
-      LitElement DS: <LitElementDSButton />
-      <br /><br />
-      Stencil DS: <StencilDSButton />
-      <br /><br />
-      Svelte DS: <SvelteDSButton />
-    </div>
+    LitElement DS: <LitElementDSButton />
+    <br /><br />
+    Stencil DS: <StencilDSButton />
+    <br /><br />
+    Svelte DS: <SvelteDSButton />
   </div>
 );
 
