@@ -8,6 +8,11 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface StencilDsButton {
     }
+    interface StencilDsMultitype {
+        "buttonprops": Object;
+        "itemlist": Array<string>;
+        "title": string;
+    }
 }
 declare global {
     interface HTMLStencilDsButtonElement extends Components.StencilDsButton, HTMLStencilElement {
@@ -16,15 +21,28 @@ declare global {
         prototype: HTMLStencilDsButtonElement;
         new (): HTMLStencilDsButtonElement;
     };
+    interface HTMLStencilDsMultitypeElement extends Components.StencilDsMultitype, HTMLStencilElement {
+    }
+    var HTMLStencilDsMultitypeElement: {
+        prototype: HTMLStencilDsMultitypeElement;
+        new (): HTMLStencilDsMultitypeElement;
+    };
     interface HTMLElementTagNameMap {
         "stencil-ds-button": HTMLStencilDsButtonElement;
+        "stencil-ds-multitype": HTMLStencilDsMultitypeElement;
     }
 }
 declare namespace LocalJSX {
     interface StencilDsButton {
     }
+    interface StencilDsMultitype {
+        "buttonprops"?: Object;
+        "itemlist"?: Array<string>;
+        "title"?: string;
+    }
     interface IntrinsicElements {
         "stencil-ds-button": StencilDsButton;
+        "stencil-ds-multitype": StencilDsMultitype;
     }
 }
 export { LocalJSX as JSX };
@@ -32,6 +50,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "stencil-ds-button": LocalJSX.StencilDsButton & JSXBase.HTMLAttributes<HTMLStencilDsButtonElement>;
+            "stencil-ds-multitype": LocalJSX.StencilDsMultitype & JSXBase.HTMLAttributes<HTMLStencilDsMultitypeElement>;
         }
     }
 }

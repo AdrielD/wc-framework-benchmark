@@ -1,0 +1,18 @@
+.wrapper {
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #000;
+  display: inline-block;
+}
+ul {
+  margin: 0;
+  padding: 10px;
+}
+.expanded { display: block; }
+.collapsed { display: none; }
+li {
+  list-style: none;
+  border-bottom: 1px solid #afafaf;
+  margin-bottom: 5px;
+}
